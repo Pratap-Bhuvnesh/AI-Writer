@@ -1,0 +1,17 @@
+<div class="container">  
+    <div *ngIf="error$ | async as error">
+    <p style="color:red">{{ error }}</p>
+    </div>
+    <!-- Generate Section -->
+    <div class="card">
+      <h2>Enter Credentials</h2>
+      <form #myForm="ngForm" (ngSubmit)="submitForm(myForm.value)">
+        <input type="text" placeholder="Enter Email" ngModel name="email"/>
+        <input type="text" placeholder="Enter Password" ngModel name="password"/>      
+        <button>Login</button>
+      </form>
+      <!-- Displaying form values directly -->
+      <p>Email: {{ myForm.value.email }}</p>
+      <p>Password: {{ myForm.value.password }}</p>
+    </div>   
+  </div>

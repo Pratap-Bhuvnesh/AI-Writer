@@ -1,0 +1,12 @@
+ <!-- Navbar -->
+  <header class="navbar">
+    <a class="btn-outline" [routerLink]="['']"><h2>AI Writer Pro</h2></a>
+
+    <a class="btn-outline" *ngIf="!isLoggedIn()" [routerLink]="['/login']"> Login</a>
+    <ng-container *ngIf="isLoggedIn()">
+        <a class="link" (click)="logout()" [routerLink]="['']"> Logout</a>  
+      <a class="link" [routerLink]="['/history']"> History</a>
+      <a class="link" [routerLink]="['/generatecontent']">Generate Content</a>
+    </ng-container>
+    
+  </header>

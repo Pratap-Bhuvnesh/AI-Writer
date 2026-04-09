@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+   background: linear-gradient(135deg, #4a69bd, #6a89cc);
+  color: white;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #4a69bd, #6a89cc);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+/* Buttons */
+.btn-primary {
+  padding: 12px 25px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  border: 1px solid #4a69bd;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Features */
+.features {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.feature-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 50px;
+  background: #4a69bd;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+    background: linear-gradient(135deg, #4a69bd, #6a89cc);
+  color: white;
+}

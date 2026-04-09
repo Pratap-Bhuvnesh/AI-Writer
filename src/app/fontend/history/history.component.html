@@ -1,0 +1,10 @@
+ <!-- History Section -->
+    <div class="card">
+      <h2>History</h2>
+      <div class="history-item" *ngFor="let item of apiResult$ | async">
+        <p><b>Prompt:</b> {{item.prompt}}</p>
+        <p><b>Response:</b></p>
+        <div [innerHTML]="item.response"></div>
+        <small> {{item.created_at | date:'dd MMM yyyy'}} </small>
+      </div>
+    </div>

@@ -1,0 +1,11 @@
+a.btn-outline{
+    text-decoration: none;
+    color: white;
+}
+.navbar .link{
+ text-decoration: none;
+    color: white;
+}
+.navbar .link:hover{ 
+    color: #3b55a0;
+}

@@ -1,0 +1,35 @@
+<div class="container">
+
+    <!-- Generate Section -->
+    <div class="card">
+      <form #myForm="ngForm" (ngSubmit)="submitForm(myForm.value)">
+      <h2>Generate Content</h2>
+
+      <input type="text" ngModel name="prompt" placeholder="Enter topic..." />
+
+      <select ngModel name="types">
+        <option>blog</option>
+        <option>ad</option>
+        <option>email</option>
+      </select>
+
+      <select ngModel name="tones">
+        <option>formal</option>
+        <option>casual</option>
+        <option>funny</option>
+      </select>
+
+      <select ngModel name="lengths">
+        <option>short</option>
+        <option>medium</option>
+        <option>long</option>
+      </select>
+
+      <button>Generate</button>
+      </form>
+       <div class="result">
+        <h3>Result</h3>        
+        <div [innerHTML]="prompResult"></div>
+      </div>
+    </div>   
+  </div>

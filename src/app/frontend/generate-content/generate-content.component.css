@@ -1,0 +1,53 @@
+
+/* Container */
+.container {
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4a69bd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3b55a0;
+}
+
+/* Result */
+.result {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f1f2f6;
+  border-radius: 5px;
+}
+
+/* History */
+.history-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
