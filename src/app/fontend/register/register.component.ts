@@ -28,18 +28,18 @@ export class RegisterComponent {
     submitForm(formvalues:registerUser){
       console.log(formvalues);    
     this.regService.registerUser(formvalues).subscribe({
-      next: (res: any) => {
+      next: (res: any) => {   
+         // ✅ CLEAR ERRORS ON SUCCESS
+        this.error = {};     
         this.statusColour ="green"
         localStorage.setItem('token',res.token)
         this.successMessage = 'Registration successful!';
         setTimeout(() => {
           this.router.navigate(['/']);
-        }, 5000); // 5000ms = 5 seconds                
+        }, 3000); // 5000ms = 5 seconds                
       },
       error: (err) => {
-       this.error = err.error.errors;
-       console.log(this.error);
-       
+       this.error = err.error.errors;       
        this.statusColour ="red"
       }
     });
