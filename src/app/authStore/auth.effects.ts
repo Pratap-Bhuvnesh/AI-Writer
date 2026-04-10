@@ -15,7 +15,7 @@ export class AuthEffects {
     this.actions$.pipe(
       ofType(AuthActions.login),
       mergeMap(({ email, password }) =>
-        this.http.post<{ token: string; user: any }>('http://127.0.0.1:8000/api/login', { email, password }).pipe(
+        this.http.post<{ token: string; user: any }>('https://ai-writer-pro.up.railway.app/api/login', { email, password }).pipe(
           tap((res: any) => {
             // Save token locally
             localStorage.setItem('token', res.token);
