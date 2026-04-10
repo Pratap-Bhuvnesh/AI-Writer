@@ -25,7 +25,6 @@ export class LoginComponent {
   password = '';  
   submitForm(formvalues:any){
     const { email, password } = formvalues;
-    this.store.dispatch(AuthActions.login({ email, password }))      
-    console.log(this.error$);     
+    this.store.dispatch(AuthActions.login({ email, password })) 
   }
 }

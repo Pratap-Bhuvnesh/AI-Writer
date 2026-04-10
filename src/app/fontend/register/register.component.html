@@ -1,0 +1,21 @@
+<div class="container"> 
+    <div *ngIf="successMessage" style="color:green">
+        {{ successMessage }}
+    </div> 
+    <div *ngIf="error">
+        <div *ngFor="let field of error | keyvalue">
+            <p style="color:{{statusColour}}">{{ field.value[0] }}</p>
+        </div>
+    </div>
+
+    <!-- Generate Section -->
+    <div class="card">
+      <h2>Enter Credentials</h2>
+      <form #myForm="ngForm" (ngSubmit)="submitForm(myForm.value)">
+         <input type="text" placeholder="Enter Name" ngModel name="name"/>
+        <input type="text" placeholder="Enter Email" ngModel name="email"/>
+        <input type="text" placeholder="Enter Password" ngModel name="password"/>      
+        <button>Register</button>
+      </form>      
+    </div>   
+  </div>

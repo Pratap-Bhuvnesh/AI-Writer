@@ -1,4 +1,4 @@
-a.btn-outline{
+/* a.btn-outline{
     text-decoration: none;
     color: white;
 }
@@ -8,4 +8,32 @@ a.btn-outline{
 }
 .navbar .link:hover{ 
     color: #3b55a0;
+} */
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav-left .logo {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn-outline, .link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-outline:hover, .link:hover {
+  color: #00c8ff;
 }
