@@ -7,7 +7,7 @@ import { map, Observable } from 'rxjs';
 })
 export class GroqserviceService {  
    //token = "10|yZZ4Wi3hNfxPWDaP69MD0o2tKUWxkCxHOFOOVvWj13eb5335"; // or wherever you store it
-  url:string = "http://127.0.0.1:8000/api/"
+  url:string = "https://ai-writer-pro.up.railway.app/api/"
   constructor(private http: HttpClient) { }
    groqhistory(): Observable<any[]> {
     /* return this.http.get<any>(this.url, {
